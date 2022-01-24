@@ -178,5 +178,13 @@ export default {
       salesQueries,
     }
   },
+
+  created() {
+    this.connection = new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@trade')
+
+    this.connection.onmessage = event => {
+      console.log(event)
+    }
+  },
 }
 </script>

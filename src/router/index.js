@@ -14,6 +14,11 @@ const routes = [
     component: () => import('@/views/dashboard/Dashboard.vue'),
   },
   {
+    path: '/chart',
+    name: 'chart',
+    component: () => import('@/views/charts/Chart.vue'),
+  },
+  {
     path: '/typography',
     name: 'typography',
     component: () => import('@/views/typography/Typography.vue'),
